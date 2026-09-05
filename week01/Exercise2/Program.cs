@@ -1,12 +1,12 @@
 using System;
 
-class program
+class Program
 {
     static void Main(string[] args)
     {
         // Prompt the user to enter their grade percentage
         Console.WriteLine("Enter your grade percentage: ");
-        int grade = Convert.parse(Console.ReadLine());
+        int grade = int.Parse(Console.ReadLine());
         string letter;
 
         // Stores the letter grade in the variable letter based on the grade percentage
