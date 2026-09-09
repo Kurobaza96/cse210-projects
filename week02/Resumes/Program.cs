@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Create a new job
         Job job1 = new Job();
         job1._jobTitle = "Software Engineer";
         job1._company = "Microsoft";
@@ -16,6 +17,7 @@ class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
+        // Create a new resume
         Resume myResume = new Resume();
         myResume._name = "Allison Rose";
 
