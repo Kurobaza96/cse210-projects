@@ -1,10 +1,10 @@
 public class Job
 {
     // Member variables
-    private string _jobTitle;
-    private string _company;
-    private int _startYear;
-    private int _endYear;
+    public string _jobTitle;
+    public string _company;
+    public int _startYear;
+    public int _endYear;
 
     // Displays the job information
     public void Display()
