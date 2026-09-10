@@ -19,6 +19,7 @@ public class Journal
         {
             entry.Display();
         }
+        Console.WriteLine($"Total entries: {_entries.Count}");
         Console.WriteLine("----------------------");
     }
 
@@ -47,8 +48,7 @@ public class Journal
             entry.LoadFromString(line);
             _entries.Add(entry);
         }
-
-        Console.WriteLine($"Total entries: {_entries.Count}");
+        
         Console.WriteLine("Entries loaded from file successfully.");
     }
 }
