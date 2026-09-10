@@ -72,8 +72,7 @@ class Program
             {
                 Console.WriteLine("Invalid choice. Please select 1-5.");
             }
-
-            Console.WriteLine("----------------------");
+                        
             Console.WriteLine();        }
 
        
