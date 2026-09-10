@@ -48,6 +48,7 @@ public class Journal
             _entries.Add(entry);
         }
 
+        Console.WriteLine($"Total entries: {_entries.Count}");
         Console.WriteLine("Entries loaded from file successfully.");
     }
 }
