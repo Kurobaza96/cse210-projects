@@ -31,9 +31,12 @@ class Program
                 Console.Write("> ");
                 string response = Console.ReadLine();
 
+                Console.Write("Whats your mood today?");
+                string mood = Console.ReadLine();
+
                 string date = DateTime.Now.ToString("MM/dd/yyyy");
 
-                Entry newEntry = new Entry(date, randomPrompt, response);
+                Entry newEntry = new Entry(date, randomPrompt, response, mood);
 
                 journal.AddEntry(newEntry);
 
