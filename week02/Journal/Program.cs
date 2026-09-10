@@ -9,7 +9,7 @@ class Program
 
         while (choice != 5)
         {
-            Console.WriteLine("Journal Menu");
+            Console.WriteLine("----- Journal Menu -----");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");
             Console.WriteLine("3. Save the journal to a file");
@@ -72,6 +72,7 @@ class Program
                 Console.WriteLine("Invalid choice. Please select 1-5.");
             }
 
+            Console.WriteLine("----------------------");
             Console.WriteLine();        }
 
        
