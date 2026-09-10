@@ -9,6 +9,7 @@ class Program
 
         while (choice != 5)
         {
+            Console.WriteLine("------------------------");
             Console.WriteLine("----- Journal Menu -----");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");

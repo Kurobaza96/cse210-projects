@@ -14,11 +14,12 @@ public class Journal
             Console.WriteLine("No entries found in the journal.");
             return;
         }
-
+        Console.WriteLine("----- My Journal -----");
         foreach (Entry entry in _entries)
         {
             entry.Display();
         }
+        Console.WriteLine("----------------------");
     }
 
     public void SaveToFile(string filename)
