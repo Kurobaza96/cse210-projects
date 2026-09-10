@@ -31,7 +31,7 @@ public class Journal
             }
         }
 
-        Console.WriteLine("Entries saved to file successfully.");
+        Console.WriteLine("Entry saved to file successfully.");
     }
 
     public void LoadFromFile(string filename)
