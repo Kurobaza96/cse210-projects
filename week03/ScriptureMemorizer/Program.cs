@@ -6,7 +6,7 @@ class Program
     {
         // Creativity/Exceeding Requirements:
         // Add a feature to select between 4 differente scriptures.
-        // At the end user can select to quit or continue with another scripture.
+        // User can request a hint and 1 word will appear.
 
         List<Scripture> scriptures = new List<Scripture>();
 
@@ -66,18 +66,29 @@ class Program
 
             Console.WriteLine(scripture.GetDisplayText());
             Console.WriteLine();
-            Console.Write("Press Enter to hide more words or type 'quit' to exit: ");
+            Console.WriteLine("Press Enter to hide more words.");
+            Console.WriteLine("Type 'hint' to reveal one hidden word.");
+            Console.WriteLine("Type 'quit' to exit.");
+            Console.WriteLine();
+
+            Console.Write("Your choice: ");
 
             string input = Console.ReadLine();
 
             if (input != null && input.ToLower() == "quit")
             {
-                break;
+                return;
             }
 
-            scripture.HideRandomWords(3);
+            if (input != null && input.ToLower() == "hint")
+            {
+                scripture.ShowHint();
+            }
+            else
+            {
+                scripture.HideRandomWords(3);
+            }
         }
-
         Console.Clear();
         Console.WriteLine(scripture.GetDisplayText());
     }

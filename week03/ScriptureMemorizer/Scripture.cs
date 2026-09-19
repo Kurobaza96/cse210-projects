@@ -65,4 +65,27 @@ public class Scripture
 
         return true;
     }
+
+    //If user request for a hint
+    public void ShowHint()
+    {
+        List<Word> hiddenWords = new List<Word>();
+
+        foreach (Word word in _words)
+        {
+            if (word.IsHidden())
+            {
+                hiddenWords.Add(word);
+            }
+        }
+
+        if (hiddenWords.Count > 0)
+        {
+            Random random = new Random();
+            int randomIndex = random.Next(hiddenWords.Count);
+
+            hiddenWords[randomIndex].Show();
+        }
+    }
+
 }

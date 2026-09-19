@@ -21,6 +21,12 @@ public class Word
         return _isHidden;
     }
 
+    //Show words if user request for a hint
+    public void Show()
+    {
+        _isHidden = false;
+    }
+
     // Returns the display text for the word, either the original text or underscores if hidden
     public string GetDisplayText()
     {
