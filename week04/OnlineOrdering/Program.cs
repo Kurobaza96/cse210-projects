@@ -87,7 +87,7 @@ class Program
         // Display Order 1
         Console.WriteLine("-----------------------------------------");
         Console.WriteLine("ORDER 1");
-        Console.WriteLine("--");
+        Console.WriteLine("-----------------------------------------");
 
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
@@ -99,7 +99,7 @@ class Program
         // Display Order 2
         Console.WriteLine("-----------------------------------------");
         Console.WriteLine("ORDER 2");
-        Console.WriteLine("--------------------------------------");
+        Console.WriteLine("-----------------------------------------");
 
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
