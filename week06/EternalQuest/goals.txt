@@ -1,0 +1,2 @@
+0
+SimpleGoal|Study Japanese|Learn a new Japanese word everyday|100|False
