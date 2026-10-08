@@ -4,6 +4,7 @@ public abstract class Goal
     private string _description;
     private int _points;
 
+    // Constructor for creating a new Goal
     public Goal(string name, string description, int points)
     {
         _name = name;
@@ -11,6 +12,7 @@ public abstract class Goal
         _points = points;
     }
 
+    // Getter methods for the private fields of Goal
     public string GetName()
     {
         return _name;

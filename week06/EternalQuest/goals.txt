@@ -1,2 +1,4 @@
-0
+40
 SimpleGoal|Study Japanese|Learn a new Japanese word everyday|100|False
+EternalGoal|Study Scriptures each day|50|50
+ChecklistGoal|Mision Work|Help with the missionary work.|20|5|50|2

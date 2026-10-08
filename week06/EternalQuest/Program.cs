@@ -2,8 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+
 class Program
 {
+    //CREATIVITY AND EXCEEDING REQUIREMENTS
+    //Level System: The player gains a new level for every 1000 points earned.
+    //Level Names: Each level has a different title. Example: Level 3 Temple Guardian
+    //Achievements: The player can unlock achievements based on their score.
+    //Checklist Bonus: Adds bonus points for completing a checklist goal.
+    //List Goals: Displays the type of goal (Simple, Eternal, Checklist) in the list of goals.
+
     private static List<Goal> _goals = new List<Goal>();
     private static int _score = 0;
 
@@ -18,6 +26,7 @@ class Program
         Console.WriteLine("Welcome to your Eternal Quest!");
         Console.WriteLine();
 
+        // Main game loop
         while (running)
         {
             DisplayStatus();
@@ -70,6 +79,7 @@ class Program
         }
     }
 
+    // Displays the current score and level of the player
     static void DisplayStatus()
     {
         Console.WriteLine("--------------------------------------");
@@ -78,6 +88,7 @@ class Program
         Console.WriteLine("--------------------------------------");
     }
 
+    // Displays the main menu options to the player
     static void DisplayMenu()
     {
         Console.WriteLine();
@@ -96,6 +107,7 @@ class Program
         return (_score / 1000) + 1;
     }
 
+    // Returns the name of the level based on the player's current level
     static string GetLevelName()
     {
         int level = GetLevel();
@@ -122,6 +134,7 @@ class Program
         }
     }
 
+    // Prompts the user to create a new goal and adds it to the list of goals
     static void CreateGoal()
     {
         Console.WriteLine("CREATE NEW GOAL");
@@ -195,6 +208,7 @@ class Program
         }
     }
 
+    // Displays the list of goals to the player
     static void ListGoals()
     {
         Console.WriteLine("YOUR GOALS");
@@ -213,6 +227,7 @@ class Program
         }
     }
 
+    // Records an event for a selected goal and updates the score and level accordingly
     static void RecordEvent()
     {
         if (_goals.Count == 0)
@@ -291,6 +306,7 @@ class Program
         }
     }
 
+    // Displays a level-up message when the player reaches a new level
     static void DisplayLevelUp(int newLevel)
     {
         Console.WriteLine();
@@ -303,6 +319,7 @@ class Program
         Console.WriteLine("======================================");
     }
 
+    // Checks for achievements based on the player's score and displays messages when achievements are unlocked
     static void CheckAchievements()
     {
         if (_score == 100)
@@ -327,6 +344,7 @@ class Program
         }
     }
 
+    // Saves the current score and goals to a file specified by the user
     static void SaveGoals()
     {
         Console.Write("Enter filename to save: ");
@@ -354,6 +372,7 @@ class Program
         }
     }
 
+    // Loads the score and goals from a file specified by the user
     static void LoadGoals()
     {
         Console.Write("Enter filename to load: ");
